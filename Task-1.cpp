@@ -1,6 +1,3 @@
-#include <bits/stdc++.h>
-using namespace std;
-
 bool validPath(int n, vector<vector<int>>& edges, int source, int destination) {
     // Step 1: Create the adjacency list
     vector<vector<int>> graph(n);
@@ -35,14 +32,7 @@ bool validPath(int n, vector<vector<int>>& edges, int source, int destination) {
     return false;
 }
 
-int main() {
-    int n = 6;
-    vector<vector<int>> edges = {{0, 1}, {0, 2}, {3, 5}, {5, 4}, {4, 3}};
-    int source = 0, destination = 5;
-    cout << (validPath(n, edges, source, destination) ? "true" : "false") << endl;
-    return 0;
-}
 
 
-//Time Complexity:
-//Space Complexity:
+Time Complexity: O(V+E)
+Space Complexity: O(V)
